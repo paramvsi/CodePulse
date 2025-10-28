@@ -76,7 +76,7 @@ export default function DemoPage() {
                 </Button>
               </Link>
               <Link href="/">
-                <Button size="sm" variant="outline" className="text-cloud-gray">
+                <Button size="sm" variant="outline" className="text-cloud-gray hover:text-cloud-gray">
                   Exit Demo
                 </Button>
               </Link>
