@@ -1,3 +1,14 @@
+/**
+ * Clerk Authentication Middleware
+ *
+ * NOTE: This file is intentionally named middleware.ts (not proxy.ts)
+ * - Clerk requires Edge runtime, which middleware.ts provides
+ * - Next.js 16's proxy.ts uses Node.js runtime (incompatible with Clerk)
+ * - The deprecation warning is expected and safe to ignore for Clerk auth
+ *
+ * @see https://clerk.com/docs/quickstarts/nextjs
+ */
+
 import { clerkMiddleware, createRouteMatcher } from "@clerk/nextjs/server";
 
 const isPublicRoute = createRouteMatcher([
