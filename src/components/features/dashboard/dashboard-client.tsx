@@ -188,32 +188,6 @@ export function DashboardClient({ userName }: DashboardClientProps) {
         <div className="mb-8">
           <PomodoroSettings />
         </div>
-
-        {/* Coming Soon Section */}
-        <Card className="border-electric-indigo/20 bg-graphite p-8 text-center">
-          <h2 className="text-2xl font-bold text-white">More Features Coming Soon!</h2>
-          <p className="mx-auto mt-4 max-w-2xl text-lg text-cloud-gray">
-            We're building analytics, reports, and advanced session management. For now, enjoy
-            the session tracker!
-          </p>
-          <div className="mt-6 flex flex-wrap justify-center gap-3">
-            <span className="rounded-md bg-electric-indigo/10 px-3 py-1 text-sm text-electric-indigo">
-              ✓ Authentication
-            </span>
-            <span className="rounded-md bg-electric-indigo/10 px-3 py-1 text-sm text-electric-indigo">
-              ✓ Session Tracking
-            </span>
-            <span className="rounded-md bg-electric-indigo/10 px-3 py-1 text-sm text-electric-indigo">
-              ✓ Break Reminders
-            </span>
-            <span className="rounded-md bg-cloud-gray/10 px-3 py-1 text-sm text-cloud-gray">
-              ○ Analytics
-            </span>
-            <span className="rounded-md bg-cloud-gray/10 px-3 py-1 text-sm text-cloud-gray">
-              ○ Reports
-            </span>
-          </div>
-        </Card>
       </div>
 
       {/* Break Reminder Overlay */}

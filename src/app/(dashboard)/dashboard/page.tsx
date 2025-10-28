@@ -1,4 +1,4 @@
-import { auth } from "@clerk/nextjs/server";
+import { auth, currentUser } from "@clerk/nextjs/server";
 import { redirect } from "next/navigation";
 import { DashboardClient } from "@/components/features/dashboard/dashboard-client";
 import type { Metadata } from "next";
@@ -15,5 +15,8 @@ export default async function DashboardPage() {
     redirect("/sign-in");
   }
 
-  return <DashboardClient userName="Developer" />;
+  const user = await currentUser();
+  const userName = user?.firstName || user?.username || "Developer";
+
+  return <DashboardClient userName={userName} />;
 }
