@@ -155,7 +155,7 @@ export function Hero() {
             asChild
             size="lg"
             variant="outline"
-            className="border-soft-cyan/50 px-8 text-base font-semibold text-soft-cyan transition-all hover:bg-soft-cyan/10 hover:shadow-lg hover:shadow-soft-cyan/30"
+            className="border-soft-cyan/50 px-8 text-base font-semibold text-soft-cyan transition-all hover:bg-soft-cyan/10 hover:text-soft-cyan hover:shadow-lg hover:shadow-soft-cyan/30"
           >
             <Link href="/sign-up">Sign Up Free</Link>
           </Button>
