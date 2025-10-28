@@ -22,7 +22,11 @@ export default function SignUpPage() {
         </div>
 
         {/* Clerk Sign Up Component */}
-        <SignUp appearance={clerkTheme} />
+        <SignUp
+          appearance={clerkTheme}
+          forceRedirectUrl="/dashboard"
+          signInUrl="/sign-in"
+        />
 
         {/* Additional info */}
         <div className="mt-6 text-center">
