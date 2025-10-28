@@ -4,7 +4,7 @@
  * TODO: Replace with Supabase client in Phase 2
  */
 
-import type { Session } from "@/types";
+import type { Session, SessionUpdate } from "@/types";
 
 class SessionService {
   private sessions: Session[] = [];
@@ -57,15 +57,7 @@ class SessionService {
    */
   async updateSession(
     sessionId: string,
-    data: Partial<{
-      projectName: string;
-      language: string;
-      activityType: string;
-      notes: string;
-      endTime: string;
-      durationMinutes: number;
-      isActive: boolean;
-    }>
+    data: SessionUpdate
   ): Promise<Session | null> {
     const sessionIndex = this.sessions.findIndex((s) => s.id === sessionId);
     if (sessionIndex === -1) return null;

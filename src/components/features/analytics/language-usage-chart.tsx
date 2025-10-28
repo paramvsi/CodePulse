@@ -9,6 +9,7 @@ interface LanguageData {
   hours: number;
   percentage: number;
   color: string;
+  [key: string]: string | number;
 }
 
 interface LanguageUsageChartProps {
